@@ -1,0 +1,80 @@
+<div>
+
+    <a routerLink="">Model</a>
+</div>
+<router-outlet></router-outlet>
+
+
+
+<button (click)="toggelBtn()">Toggle</button>
+{{contentText}}
+{{content}}
+<div class="test">
+    <h2>hello works!</h2>
+</div>
+
+{{numberString}} <br>
+{{example}}
+
+
+
+<div>
+    {{example.firstname}}
+    {{example.surname}}
+    {{example.firstname + numberString}}
+    {{example.surname + "1234567890"}}
+</div>
+
+<div>
+    {{price | number: '10.3-3'}}
+</div>
+
+<br>
+
+<div>
+    {{example.firstname | uppercase}}
+</div>
+
+<div>
+    {{displayText()}}
+</div>
+
+<!-- <div>
+    {{object.txt}}
+</div> -->
+
+<div>
+    {{displayText()}}
+</div>
+
+<br><br>
+
+
+<button type="button" (click)="toggleColor()">Change color</button>
+&NonBreakingSpace;
+<button type="button" (click)="toggleSize()">Change text size</button>
+
+
+<div [ngClass] = "classCSS">
+    Change text color
+</div>
+
+<button type="button" (click)="toggleStyleSize()">Change style font-size</button>
+&NonBreakingSpace;
+<button type="button" (click)="toggleSize()">Change text size</button>
+
+<!-- <div [ngStyle] = "styleCSS">
+    ng Style css
+</div> -->
+
+<div [style.color] = "styleCSS.color">
+    [style.color] = "styleCSS.color"
+</div>
+<div style = "color: lightblue;">
+    style = "color: lightblue;"
+</div>
+
+<div [ngStyle] = "{'color': 'lightblue'}">
+    ng Style css
+</div>
+

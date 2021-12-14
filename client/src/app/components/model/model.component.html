@@ -1,0 +1,22 @@
+<div *ngFor= "let name of ['1','2']">
+    name: {{name}}
+  </div>
+  
+  <div *ngFor="let baverage of baverageList">
+    {{baverage.no}} : {{baverage.name}}
+  </div>
+  
+  <div *ngIf="show && confirmShow" #testElement>
+      TEST
+  </div>
+  Show : <input type="checkbox"  [(ngModel)]="show">
+  Confirm show : <input type="checkbox"  [(ngModel)]="confirmShow">
+  <div *ngIf="showObject?.confirmShow">
+      TEST show object
+  </div>
+  <div>
+
+    <a routerLink="hello">Hello</a>
+</div>
+
+<router-outlet></router-outlet>
